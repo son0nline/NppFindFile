@@ -1,7 +1,7 @@
 # NppFindFile
 Notepad++ Find file plugin
 
-![Preview](https://github.com/son0nline/NppFileFile/Docs/1.png?raw=true)
+![Preview](https://github.com/son0nline/NppFindFile/blob/main/Docs/1.png)
 
 Ctrl+Backspace: jump to parent folder  
 Ctrl+Del: Clear search  
