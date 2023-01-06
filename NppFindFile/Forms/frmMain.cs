@@ -113,16 +113,13 @@ namespace Kbg.NppPluginNET
                                  e.Contains(searchString))
                              .ToList())
                 {
-                    if (!fileInfos.Exists(file => file.FullName.Equals(filePath)))
+                    fileInfos.Add(new SimpleFileInfo()
                     {
-                        fileInfos.Add(new SimpleFileInfo()
-                        {
-                            Name = Path.GetFileName(filePath),
-                            FullName = filePath,
-                            Extension = Path.GetExtension(filePath),
-                            NameWithoutExtension = Path.GetFileNameWithoutExtension(filePath)
-                        });
-                    }
+                        Name = Path.GetFileName(filePath),
+                        FullName = filePath,
+                        Extension = Path.GetExtension(filePath),
+                        NameWithoutExtension = Path.GetFileNameWithoutExtension(filePath)
+                    });
                 }
             }
         }
